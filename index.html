@@ -2,140 +2,228 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Comunicado aos Clientes</title>
 <style>
+
     * {
+
       margin: 0;
+
       padding: 0;
+
       box-sizing: border-box;
+
     }
  
     body {
+
       font-family: Arial, sans-serif;
+
       line-height: 1.6;
-      background: linear-gradient(135deg, #f8fffe 0%, #e8f5f0 100%);
+
+      background-color: #FOF5CD; /* Bege claro */
+
       min-height: 100vh;
+
       padding: 20px;
+
+      color: #333;
+
     }
  
     .container {
+
       max-width: 700px;
+
       margin: 0 auto;
-      background: white;
+
+      background: #fff;
+
       border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(26, 95, 74, 0.1);
+
+      box-shadow: 0 8px 24px rgba(0, 81, 42, 0.1); /* sombra verde mata suave */
+
       overflow: hidden;
+
+      border: 2px solid #6ECC01; /* Verde Vecta */
+
     }
  
     .header {
-      background: linear-gradient(135deg, #1a5f4a 0%, #2a7a5f 100%);
-      color: white;
-      padding: 30px 20px;
+
+      background: #ffffff;
+
+      padding: 30px 20px 20px;
+
       text-align: center;
-      position: relative;
+
+      border-bottom: 4px solid #6ECC01; /* Verde Vecta */
+
     }
  
     .logo {
-      width: 140px;
+
+      width: 160px;
+
       height: auto;
-      margin-bottom: 20px;
+
+      margin-bottom: 15px;
+
     }
  
     .header h1 {
+
       font-size: 1.8em;
-      margin-bottom: 10px;
-      font-weight: 300;
+
+      margin-bottom: 8px;
+
+      color: #00512A; /* Verde mata */
+
+      font-weight: bold;
+
     }
  
     .header p {
+
       font-size: 1.1em;
-      font-weight: bold;
+
+      color: #007C27; /* Verde nordeste */
+
+      font-weight: 500;
+
     }
  
     .content {
-      padding: 40px;
-      color: #333;
+
+      padding: 40px 30px;
+
+      background-color: #FOF5CD; /* Bege */
+
     }
  
     .greeting {
+
       font-size: 1.1em;
+
       font-weight: bold;
-      color: #1a5f4a;
+
+      color: #007C27;
+
       margin-bottom: 20px;
+
     }
  
     .intro {
+
       margin-bottom: 30px;
+
       font-size: 1.05em;
-      color: #444;
+
+      color: #333;
+
     }
  
     .section {
+
       margin-bottom: 30px;
+
     }
  
     .section-title {
-      background: linear-gradient(90deg, #66ffaa, #4dff88);
-      color: #1a5f4a;
+
+      background-color: #C5F167; /* Verde neon */
+
+      color: #00512A; /* Verde mata */
+
       font-weight: bold;
-      padding: 12px 20px;
+
+      padding: 10px 16px;
+
       border-radius: 8px;
-      margin-bottom: 15px;
+
+      margin-bottom: 12px;
+
       font-size: 1.1em;
-      border-left: 4px solid #1a5f4a;
+
+      border-left: 6px solid #007C27; /* Verde nordeste */
+
     }
  
     .section-content {
-      padding: 0 20px;
+
+      padding: 0 10px;
+
       text-align: justify;
+
+      color: #333;
+
     }
  
     .highlight {
-      background: linear-gradient(90deg, #66ffaa, #4dff88);
-      color: #1a5f4a;
-      padding: 2px 6px;
-      border-radius: 4px;
+
+      color: #00512A; /* Verde mata */
+
       font-weight: bold;
+
     }
  
     .closing {
+
       margin-top: 40px;
+
       padding-top: 20px;
-      border-top: 2px solid #66ffaa;
+
+      border-top: 2px solid #6ECC01; /* Verde Vecta */
+
       color: #444;
+
     }
  
     .signature {
+
       text-align: center;
+
       margin-top: 30px;
+
       font-weight: bold;
-      color: #1a5f4a;
+
+      color: #007C27;
+
       font-size: 1.1em;
+
     }
  
     .company-name {
+
       margin-top: 10px;
+
       font-style: italic;
+
       color: #666;
+
     }
  
     @media (max-width: 768px) {
+
       .container {
+
         margin: 10px;
-      }
- 
-      .header {
-        padding: 20px;
+
       }
  
       .content {
-        padding: 25px;
+
+        padding: 25px 20px;
+
       }
  
       .logo {
-        width: 100px;
+
+        width: 120px;
+
       }
+
     }
 </style>
 </head>
@@ -151,6 +239,7 @@
 <div class="greeting">Prezado(a) Cliente,</div>
  
       <div class="intro">
+
         Sabemos o quanto a entrega do seu novo lar é aguardada com expectativa, e queremos compartilhar com você uma atualização importante sobre o cronograma da obra.
 </div>
  
@@ -158,6 +247,7 @@
 <div class="section-title">📅 Sobre a nova data de entrega</div>
 <div class="section-content">
 <p>
+
             A data de entrega, inicialmente prevista para <span class="highlight">31 de julho de 2025</span>, foi reprogramada para <span class="highlight">30 de agosto de 2025</span>. Essa alteração se fez necessária em razão da greve no setor da construção civil, que durou mais de 30 dias e impactou diretamente o andamento dos serviços.
 </p>
 <br />
@@ -169,6 +259,7 @@
 <div class="section-title">🔍 Sobre a vistoria individual das unidades</div>
 <div class="section-content">
 <p>
+
             Aproveitamos para tranquilizar quem ainda não foi chamado para a vistoria individual das unidades: esse processo segue um cronograma organizado por blocos e andares, de forma criteriosa. Se a sua vistoria ainda não foi agendada, fique tranquilo(a) — em breve entraremos em contato para marcar seu atendimento.
 </p>
 </div>
@@ -178,6 +269,7 @@
 <div class="section-title">📋 Sobre o Habite-se e a assembleia do condomínio</div>
 <div class="section-content">
 <p>
+
             Além disso, temos um avanço importante: o <span class="highlight">Habite-se já está em tramitação</span>. Assim que for concluído, convocaremos a <span class="highlight">assembleia de instalação do condomínio</span>, mantendo você informado(a) em todas as etapas.
 </p>
 </div>
@@ -193,6 +285,12 @@
 <strong>Atenciosamente,</strong>
 <div class="company-name">Belvedere Condomínio Clube</div>
 </div>
+</div>
+</div>
+</body>
+</html>
+
+ 
 </div>
 </div>
 </body>
