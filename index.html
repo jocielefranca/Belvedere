@@ -3,600 +3,165 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Comunicado aos Clientes</title>
+<title>Comunicado</title>
 <style>
-
+    :root {
+      --verde-nordeste: #007C27;
+      --bege: #FOF5CD;
+      --cinza-escuro: #2c2c2c;
+      --cinza-medio: #555;
+    }
+ 
     * {
-
       margin: 0;
-
       padding: 0;
-
       box-sizing: border-box;
-
     }
  
     body {
-
-      font-family: Arial, sans-serif;
-
-      line-height: 1.6;
-
-      background-color: #FOF5CD; /* Bege claro */
-
-      min-height: 100vh;
-
+      font-family: "Segoe UI", sans-serif;
+      background-color: var(--bege);
+      color: var(--cinza-escuro);
       padding: 20px;
-
-      color: #333;
-
     }
  
     .container {
-
-      max-width: 700px;
-
-      margin: 0 auto;
-
-      background: #fff;
-
+      max-width: 680px;
+      margin: auto;
+      background: white;
       border-radius: 12px;
-
-      box-shadow: 0 8px 24px rgba(0, 81, 42, 0.1); /* sombra verde mata suave */
-
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
       overflow: hidden;
-
-      border: 2px solid #6ECC01; /* Verde Vecta */
-
+      border: 2px solid var(--verde-nordeste);
     }
  
     .header {
-
-      background: #ffffff;
-
-      padding: 30px 20px 20px;
-
-      text-align: center;
-
-      border-bottom: 4px solid #6ECC01; /* Verde Vecta */
-
-    }
- 
-    .logo {
-
-      width: 160px;
-
-      height: auto;
-
-      margin-bottom: 15px;
-
-    }
- 
-    .header h1 {
-
-      font-size: 1.8em;
-
-      margin-bottom: 8px;
-
-      color: #00512A; /* Verde mata */
-
-      font-weight: bold;
-
-    }
- 
-    .header p {
-
-      font-size: 1.1em;
-
-      color: #007C27; /* Verde nordeste */
-
-      font-weight: 500;
-
-    }
- 
-    .content {
-
-      padding: 40px 30px;
-
-      background-color: #FOF5CD; /* Bege */
-
-    }
- 
-    .greeting {
-
-      font-size: 1.1em;
-
-      font-weight: bold;
-
-      color: #007C27;
-
-      margin-bottom: 20px;
-
-    }
- 
-    .intro {
-
-      margin-bottom: 30px;
-
-      font-size: 1.05em;
-
-      color: #333;
-
-    }
- 
-    .section {
-
-      margin-bottom: 30px;
-
-    }
- 
-    .section-title {
-
-      background-color: #C5F167; /* Verde neon */
-
-      color: #00512A; /* Verde mata */
-
-      font-weight: bold;
-
-      padding: 10px 16px;
-
-      border-radius: 8px;
-
-      margin-bottom: 12px;
-
-      font-size: 1.1em;
-
-      border-left: 6px solid #007C27; /* Verde nordeste */
-
-    }
- 
-    .section-content {
-
-      padding: 0 10px;
-
-      text-align: justify;
-
-      color: #333;
-
-    }
- 
-    .highlight {
-
-      color: #00512A; /* Verde mata */
-
-      font-weight: bold;
-
-    }
- 
-    .closing {
-
-      margin-top: 40px;
-
-      padding-top: 20px;
-
-      border-top: 2px solid #6ECC01; /* Verde Vecta */
-
-      color: #444;
-
-    }
- 
-    .signature {
-
-      text-align: center;
-
-      margin-top: 30px;
-
-      font-weight: bold;
-
-      color: #007C27;
-
-      font-size: 1.1em;
-
-    }
- 
-    .company-name {
-
-      margin-top: 10px;
-
-      font-style: italic;
-
-      color: #666;
-
-    }
- 
-    @media (max-width: 768px) {
-
-      .container {
-
-        margin: 10px;
-
-      }
- 
-      .content {
-
-        padding: 25px 20px;
-
-      }
- 
-      .logo {
-
-        width: 120px;
-
-      }
-
-    }
-</style>
-</head>
-<body>
-<div class="container">
-<div class="header">
-<img class="logo" src="logo-belvedere.png" alt="Logo Belvedere Condomínio Clube" />
-<h1>Comunicado aos Clientes</h1>
-<p>Belvedere Condomínio Clube</p>
-</div>
- 
-    <div class="content">
-<div class="greeting">Prezado(a) Cliente,</div>
- 
-      <div class="intro">
-
-        Sabemos o quanto a entrega do seu novo lar é aguardada com expectativa, e queremos compartilhar com você uma atualização importante sobre o cronograma da obra.
-</div>
- 
-      <div class="section">
-<div class="section-title">📅 Sobre a nova data de entrega</div>
-<div class="section-content">
-<p>
-
-            A data de entrega, inicialmente prevista para <span class="highlight">31 de julho de 2025</span>, foi reprogramada para <span class="highlight">30 de agosto de 2025</span>. Essa alteração se fez necessária em razão da greve no setor da construção civil, que durou mais de 30 dias e impactou diretamente o andamento dos serviços.
-</p>
-<br />
-<p>Estamos trabalhando com total dedicação para minimizar os efeitos desse imprevisto e garantir a qualidade e o cuidado que você merece em cada detalhe do seu imóvel.</p>
-</div>
-</div>
- 
-      <div class="section">
-<div class="section-title">🔍 Sobre a vistoria individual das unidades</div>
-<div class="section-content">
-<p>
-
-            Aproveitamos para tranquilizar quem ainda não foi chamado para a vistoria individual das unidades: esse processo segue um cronograma organizado por blocos e andares, de forma criteriosa. Se a sua vistoria ainda não foi agendada, fique tranquilo(a) — em breve entraremos em contato para marcar seu atendimento.
-</p>
-</div>
-</div>
- 
-      <div class="section">
-<div class="section-title">📋 Sobre o Habite-se e a assembleia do condomínio</div>
-<div class="section-content">
-<p>
-
-            Além disso, temos um avanço importante: o <span class="highlight">Habite-se já está em tramitação</span>. Assim que for concluído, convocaremos a <span class="highlight">assembleia de instalação do condomínio</span>, mantendo você informado(a) em todas as etapas.
-</p>
-</div>
-</div>
- 
-      <div class="closing">
-<p>Reforçamos nosso compromisso com a transparência, o respeito ao seu tempo e a entrega de um imóvel pronto para receber novas histórias.</p>
-<br />
-<p>Agradecemos pela compreensão, paciência e confiança depositada em nosso trabalho.</p>
-</div>
- 
-      <div class="signature">
-<strong>Atenciosamente,</strong>
-<div class="company-name">Belvedere Condomínio Clube</div>
-</div>
-</div>
-</div>
-</body>
-</html>
-
- 
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Comunicado aos Clientes</title>
-<style>
-
-    * {
-
-      margin: 0;
-
-      padding: 0;
-
-      box-sizing: border-box;
-
-    }
- 
-    body {
-
-      font-family: Arial, sans-serif;
-
-      line-height: 1.6;
-
-      background-color: #FOF5CD; /* Bege */
-
-      min-height: 100vh;
-
+      background-color: var(--bege);
       padding: 20px;
-
-      color: #333;
-
-    }
- 
-    .container {
-
-      max-width: 700px;
-
-      margin: 0 auto;
-
-      background: #fff;
-
-      border-radius: 12px;
-
-      box-shadow: 0 6px 20px rgba(0, 124, 39, 0.15); /* sombra leve verde nordeste */
-
-      overflow: hidden;
-
-      border: 2px solid #007C27; /* Verde Nordeste */
-
-    }
- 
-    .header {
-
-      background-color: #ffffff;
-
-      padding: 20px 20px;
-
       display: flex;
-
       align-items: center;
-
-      justify-content: space-between;
-
-      border-bottom: 2px solid #007C27;
-
+      justify-content: flex-start;
+      gap: 16px;
     }
  
     .logo {
-
-      width: 90px;
-
+      width: 60px;
       height: auto;
-
     }
  
-    .header-text {
-
-      text-align: left;
-
-      padding-left: 15px;
-
-    }
- 
-    .header-text h1 {
-
+    .title {
       font-size: 1.4em;
-
-      color: #007C27;
-
-      margin-bottom: 5px;
-
-    }
- 
-    .header-text p {
-
-      font-size: 1em;
-
-      color: #555;
-
+      font-weight: bold;
+      color: var(--verde-nordeste);
     }
  
     .content {
-
       padding: 30px 25px;
-
-      background-color: #FOF5CD;
-
     }
  
     .greeting {
-
-      font-size: 1.05em;
-
-      font-weight: bold;
-
-      color: #007C27;
-
-      margin-bottom: 20px;
-
-    }
- 
-    .intro {
-
-      margin-bottom: 25px;
-
-      font-size: 1em;
-
-      color: #444;
-
+      font-size: 1.1em;
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: var(--verde-nordeste);
     }
  
     .section {
-
-      margin-bottom: 25px;
-
+      margin-top: 25px;
     }
  
-    .section-title {
-
-      color: #007C27;
-
-      font-weight: bold;
-
+    .section h2 {
       font-size: 1.05em;
-
-      margin-bottom: 10px;
-
+      color: var(--verde-nordeste);
+      margin-bottom: 8px;
     }
  
-    .section-content {
-
-      text-align: justify;
-
+    .section p {
       font-size: 0.98em;
-
-      color: #333;
-
-    }
- 
-    .highlight {
-
-      color: #007C27;
-
-      font-weight: bold;
-
+      line-height: 1.6;
+      color: var(--cinza-medio);
+      text-align: justify;
     }
  
     .closing {
-
-      margin-top: 30px;
-
-      padding-top: 20px;
-
-      border-top: 2px solid #007C27;
-
-      color: #444;
-
+      margin-top: 35px;
+      font-size: 0.95em;
+      color: var(--cinza-medio);
     }
  
     .signature {
-
       text-align: center;
-
-      margin-top: 25px;
-
+      margin-top: 35px;
       font-weight: bold;
-
-      color: #007C27;
-
-      font-size: 1em;
-
+      color: var(--verde-nordeste);
     }
  
-    .company-name {
-
-      margin-top: 8px;
-
-      font-style: italic;
-
-      color: #666;
-
-    }
- 
-    @media (max-width: 768px) {
-
-      .container {
-
-        margin: 10px;
-
-      }
- 
-      .header {
-
-        flex-direction: column;
-
-        align-items: flex-start;
-
-      }
- 
-      .header-text {
-
-        padding-left: 0;
-
-        margin-top: 10px;
-
-      }
- 
-      .logo {
-
-        width: 80px;
-
-      }
- 
+    @media (max-width: 600px) {
       .content {
-
         padding: 20px;
-
       }
-
+ 
+      .title {
+        font-size: 1.2em;
+      }
+ 
+      .section h2 {
+        font-size: 1em;
+      }
     }
 </style>
 </head>
 <body>
 <div class="container">
 <div class="header">
-<img class="logo" src="logo-belvedere.png" alt="Logo Belvedere Condomínio Clube" />
-<div class="header-text">
-<h1>Comunicado aos Clientes</h1>
-<p>Belvedere Condomínio Clube</p>
-</div>
+<img src="logo-belvedere.png" alt="Logo Belvedere" class="logo">
+<div class="title">Comunicado aos Clientes</div>
 </div>
  
     <div class="content">
 <div class="greeting">Prezado(a) Cliente,</div>
- 
-      <div class="intro">
-
+<p>
         Sabemos o quanto a entrega do seu novo lar é aguardada com expectativa, e queremos compartilhar com você uma atualização importante sobre o cronograma da obra.
+</p>
+ 
+      <div class="section">
+<h2>📅 Sobre a nova data de entrega</h2>
+<p>
+          A data de entrega, inicialmente prevista para <strong>31 de julho de 2025</strong>, foi reprogramada para <strong>30 de agosto de 2025</strong>. Essa alteração se fez necessária em razão da greve no setor da construção civil, que durou mais de 30 dias e impactou diretamente o andamento dos serviços.
+</p>
+<p>
+          Estamos trabalhando com total dedicação para minimizar os efeitos desse imprevisto e garantir a qualidade e o cuidado que você merece em cada detalhe do seu imóvel.
+</p>
 </div>
  
       <div class="section">
-<div class="section-title">📅 Sobre a nova data de entrega</div>
-<div class="section-content">
+<h2>🔍 Sobre a vistoria individual das unidades</h2>
 <p>
-
-            A data de entrega, inicialmente prevista para <span class="highlight">31 de julho de 2025</span>, foi reprogramada para <span class="highlight">30 de agosto de 2025</span>. Essa alteração se fez necessária em razão da greve no setor da construção civil, que durou mais de 30 dias e impactou diretamente o andamento dos serviços.
+          Aproveitamos para tranquilizar quem ainda não foi chamado para a vistoria individual das unidades: esse processo segue um cronograma organizado por blocos e andares, de forma criteriosa. Se a sua vistoria ainda não foi agendada, fique tranquilo(a) — em breve entraremos em contato para marcar seu atendimento.
 </p>
-<br />
-<p>Estamos trabalhando com total dedicação para minimizar os efeitos desse imprevisto e garantir a qualidade e o cuidado que você merece em cada detalhe do seu imóvel.</p>
-</div>
 </div>
  
       <div class="section">
-<div class="section-title">🔍 Sobre a vistoria individual das unidades</div>
-<div class="section-content">
+<h2>📋 Sobre o Habite-se e a assembleia do condomínio</h2>
 <p>
-
-            Aproveitamos para tranquilizar quem ainda não foi chamado para a vistoria individual das unidades: esse processo segue um cronograma organizado por blocos e andares, de forma criteriosa. Se a sua vistoria ainda não foi agendada, fique tranquilo(a) — em breve entraremos em contato para marcar seu atendimento.
+          Além disso, temos um avanço importante: o <strong>Habite-se já está em tramitação</strong>. Assim que for concluído, convocaremos a <strong>assembleia de instalação do condomínio</strong>, mantendo você informado(a) em todas as etapas.
 </p>
-</div>
-</div>
- 
-      <div class="section">
-<div class="section-title">📋 Sobre o Habite-se e a assembleia do condomínio</div>
-<div class="section-content">
-<p>
-
-            Além disso, temos um avanço importante: o <span class="highlight">Habite-se já está em tramitação</span>. Assim que for concluído, convocaremos a <span class="highlight">assembleia de instalação do condomínio</span>, mantendo você informado(a) em todas as etapas.
-</p>
-</div>
 </div>
  
       <div class="closing">
-<p>Reforçamos nosso compromisso com a transparência, o respeito ao seu tempo e a entrega de um imóvel pronto para receber novas histórias.</p>
-<br />
-<p>Agradecemos pela compreensão, paciência e confiança depositada em nosso trabalho.</p>
+<p>
+          Reforçamos nosso compromisso com a transparência, o respeito ao seu tempo e a entrega de um imóvel pronto para receber novas histórias.
+</p>
+<p style="margin-top: 12px;">
+          Agradecemos pela compreensão, paciência e confiança depositada em nosso trabalho.
+</p>
 </div>
  
       <div class="signature">
-<strong>Atenciosamente,</strong>
-<div class="company-name">Belvedere Condomínio Clube</div>
+        Belvedere Condomínio Clube
 </div>
 </div>
 </div>
 </body>
 </html>
-
  
