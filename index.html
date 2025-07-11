@@ -7,7 +7,6 @@
 <style>
   :root {
     --verde-nordeste: #007C27;
-    --bege: #FOF5CD;
     --branco: #ffffff;
     --texto: #333333;
   }
@@ -20,100 +19,119 @@
  
   body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: var(--verde-nordeste);
-    padding: 20px;
+    background-color: var(--branco);
+    padding: 0;
+    margin: 0;
   }
  
   .container {
-    max-width: 720px;
-    margin: auto;
+    max-width: 400px;
+    margin: 0 auto;
     background-color: var(--branco);
-    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   }
  
   .header {
-    background-color: var(--bege);
-    padding: 40px 20px 30px 20px;
+    background-color: var(--branco);
+    padding: 20px;
     text-align: center;
+    border-bottom: 2px solid var(--verde-nordeste);
   }
  
   .header img {
-    width: 180px;
+    width: 120px;
     height: auto;
-    margin-bottom: 15px;
-  }
- 
-  .header h1 {
-    font-size: 1.8em;
-    color: var(--verde-nordeste);
-    font-weight: bold;
   }
  
   .content {
-    background-color: var(--branco);
-    padding: 40px 30px;
-    color: var(--texto);
+    background-color: var(--verde-nordeste);
+    padding: 25px 20px;
+    color: var(--branco);
   }
  
-  .greeting {
-    font-size: 1.1em;
-    color: var(--verde-nordeste);
-    font-weight: 600;
+  .content h1 {
+    font-size: 1.4em;
+    color: var(--branco);
+    font-weight: bold;
+    text-align: center;
     margin-bottom: 20px;
   }
  
+  .greeting {
+    font-size: 1.05em;
+    color: var(--branco);
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+ 
+  .intro {
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: var(--branco);
+  }
+ 
   .section {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
  
   .section h2 {
-    font-size: 1.25em;
-    color: var(--verde-nordeste);
+    font-size: 1.1em;
+    color: var(--branco);
     font-weight: bold;
-    margin-bottom: 12px;
-    border-left: 6px solid var(--verde-nordeste);
-    padding-left: 14px;
+    margin-bottom: 10px;
+    border-left: 4px solid var(--branco);
+    padding-left: 12px;
   }
  
   .section p {
-    font-size: 1em;
-    line-height: 1.6;
+    font-size: 0.95em;
+    line-height: 1.5;
     text-align: justify;
-    color: #444;
+    color: var(--branco);
+    margin-bottom: 10px;
   }
  
   .closing {
-    font-size: 0.98em;
-    line-height: 1.6;
-    color: #444;
-    margin-top: 30px;
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: var(--branco);
+    margin-top: 25px;
+  }
+ 
+  .closing p {
+    margin-bottom: 10px;
   }
  
   .signature {
     text-align: center;
     font-weight: bold;
-    color: var(--verde-nordeste);
-    margin-top: 40px;
-    font-size: 1.1em;
+    color: var(--branco);
+    margin-top: 30px;
+    font-size: 1.05em;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
   }
  
-  @media (max-width: 600px) {
+  @media (max-width: 420px) {
+    .container {
+      max-width: 100%;
+    }
+    
     .content {
-      padding: 25px 20px;
+      padding: 20px 15px;
     }
  
     .header img {
-      width: 140px;
+      width: 100px;
     }
  
-    .header h1 {
-      font-size: 1.5em;
+    .content h1 {
+      font-size: 1.2em;
     }
  
     .section h2 {
-      font-size: 1.1em;
+      font-size: 1em;
     }
   }
 </style>
@@ -122,13 +140,14 @@
 <div class="container">
 <div class="header">
 <img src="logo-belvedere.png" alt="Logo Belvedere" />
-<h1>Comunicado aos Clientes</h1>
 </div>
  
     <div class="content">
+<h1>Comunicado aos Clientes</h1>
+
 <div class="greeting">Prezado(a) Cliente,</div>
  
-      <p>
+      <p class="intro">
         Sabemos o quanto a entrega do seu novo lar é aguardada com expectativa, e queremos compartilhar com você uma atualização importante sobre o cronograma da obra.
 </p>
  
@@ -160,13 +179,13 @@
 <p>
           Reforçamos nosso compromisso com a transparência, o respeito ao seu tempo e a entrega de um imóvel pronto para receber novas histórias.
 </p>
-<p style="margin-top: 12px;">
+<p>
           Agradecemos pela compreensão, paciência e confiança depositada em nosso trabalho.
 </p>
 </div>
  
       <div class="signature">
-        Belvedere Condomínio Clube
+        Victa
 </div>
 </div>
 </div>
